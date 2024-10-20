@@ -56,7 +56,7 @@ const AuthPage = () => {
           <div className="border flex justify-center rounded-md items-center h-auto w-[300px] md:w-[340px] p-3">
             {login ? (
               <div className="flex">
-                <p className="text-sm">Don't have an Account?</p>
+                <p className="text-sm">Do not have an Account?</p>
                 <span
                   onClick={() => {
                     setLogin(false);
