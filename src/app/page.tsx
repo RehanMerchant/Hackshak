@@ -1,9 +1,10 @@
-import AuthPage from "@/pages/AuthPages/AuthPage";
+import { ModeToggle } from "@/components/Theme/ThemTooglerButton";
+
 
 export default function Home() {
   return (
-   <div>
- <AuthPage/> 
+   <div className="">
+<ModeToggle/>
    </div>
   );
 }
