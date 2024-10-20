@@ -7,8 +7,6 @@ import { ModeToggle } from "@/components/Theme/ThemTooglerButton";
 import { FaGithub } from "react-icons/fa";
 import Login from "./Login";
 import Signup from "./Signup";
-import Image from "next/image";
-import Art from "@/asset/item.jpg";
 const AuthPage = () => {
   const [login, setLogin] = useState(true);
 
@@ -18,9 +16,6 @@ const AuthPage = () => {
         <ModeToggle />
       </div>
       <div className="flex gap-4">
-       <div className="hidden md:flex  h-[600px] ">
-        <Image src={Art} className="object-contain" alt="Item"/>
-       </div>
         <div className="gap-2 flex flex-col">
           <div className="flex gap-1 w-full justify-center items-center py-2">
             <AiFillCode className="size-10" />
