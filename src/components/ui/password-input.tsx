@@ -4,7 +4,9 @@ import { LuEyeOff } from "react-icons/lu";
 import { Input } from "./input"
 
 export interface PasswordInput
-  extends React.InputHTMLAttributes<HTMLInputElement> {}
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+    suffix?:React.ReactNode;
+  }
 
 const PasswordInput = React.forwardRef<HTMLInputElement, PasswordInput>(
   ({ className, type, ...props }, ref) => {
