@@ -1,5 +1,4 @@
 "use client";
-import { z } from "zod";
 import { FcGoogle } from "react-icons/fc";
 import React, { useState } from "react";
 import { AiFillCode } from "react-icons/ai";
@@ -64,8 +63,8 @@ const AuthPage = () => {
                   }}
                   className="text-sm ml-1 text-blue-500 underline hover:text-blue-700 cursor-pointer"
                 >
-                  {" "}
-                  Create Now{" "}
+                 
+                  Create Now
                 </span>
               </div>
             ) : (
@@ -77,8 +76,8 @@ const AuthPage = () => {
                   }}
                   className="text-sm ml-1 text-blue-500 underline hover:text-blue-700 cursor-pointer"
                 >
-                  {" "}
-                  Login Now{" "}
+              
+                  Login Now
                 </span>
               </div>
             )}

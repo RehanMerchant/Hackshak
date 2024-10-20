@@ -1,7 +1,6 @@
 import * as React from "react"
 import { LuEye } from "react-icons/lu";
 import { LuEyeOff } from "react-icons/lu";
-import { cn } from "@/lib/utils"
 import { Input } from "./input"
 
 export interface PasswordInput

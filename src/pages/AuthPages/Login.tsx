@@ -34,7 +34,7 @@ const Login = () => {
         },
       })
 
-      function onSubmit(data: z.infer<typeof FormSchema>) {
+      function onSubmit(_data: z.infer<typeof FormSchema>) {
         toast({
           variant:"success",
           title: "Logged in Sucessfully",

@@ -41,7 +41,7 @@ const Signup = () => {
       })
 
 
-      function onSubmit(data: z.infer<typeof FormSchema>) {
+      function onSubmit(_data: z.infer<typeof FormSchema>) {
         toast({
           variant:"success",
           title: "Account created!",
