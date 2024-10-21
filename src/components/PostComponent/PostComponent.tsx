@@ -34,7 +34,7 @@ interface PostInterface{
 const PostComponent = ({name,date,Dp,title,desc,postimage}:PostInterface) => {
   const [like,SetLike] = useState(false)
   return (
-    <div className="w-full border-2 hover:bg-secondary cursor-pointer rounded-md p-2">
+    <div className="w-full border-2 active:bg-secondary cursor-pointer transition-all  rounded-md p-2">
       <div className="py-4 flex items-center  justify-between">
         <div className="flex gap-2">
           <Avatar>
