@@ -14,7 +14,7 @@ import {
 import { Flag, Star } from "lucide-react";
 import { BiLike } from "react-icons/bi";
 import { BiSolidLike } from "react-icons/bi";
-
+import { LuEye } from "react-icons/lu";
 
 
 interface PostInterface{
@@ -81,8 +81,9 @@ const PostComponent = ({name,date,Dp,title,desc,postimage,likesno}:PostInterface
 </div>
 <div className="p-2 flex justify-between">
   <div className="flex gap-4 items-center  cursor-pointer md:text-base text-sm text-muted-foreground">
-<p>2.7K Views</p>
-<p>{likesno} Likes</p>
+<p className="flex items-center gap-1"><LuEye className="size-5"/> 2.7K</p>
+<p className="flex items-center gap-1"><BiSolidLike className="size-5"/> {likesno} </p>
+<p> </p>
   </div>
 <div className="px-2 items-center">
 {
