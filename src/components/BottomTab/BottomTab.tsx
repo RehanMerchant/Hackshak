@@ -1,10 +1,10 @@
 "use client"
 import { cn } from "@/lib/utils";
-import { Bell, Users, Home, LucideIcon, MessageCircle, Search } from "lucide-react";
+import { Bell, Users, Home, LucideIcon, Search } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-import { AiFillCode } from "react-icons/ai";
+
 
 
 
@@ -35,7 +35,6 @@ const BottomTab = () => {
      <NavTab  Icon={Search} link={"/search"}/>
      <NavTab  Icon={Users} link={"/cliques"}/>
      <NavTab  Icon={Bell} link={"/notifications"}/>
-     <NavTab Icon={MessageCircle} link={"/messages"}/>
     </ul>
         
         </div>

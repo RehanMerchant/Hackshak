@@ -1,6 +1,6 @@
 "use client"
 import { cn } from "@/lib/utils";
-import { Bell, Users, Home, LucideIcon, MessageCircle, Search } from "lucide-react";
+import { Bell, Users, Home, LucideIcon, Search } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -40,7 +40,6 @@ const Sidebar = () => {
      <NavTab label={'Search'} Icon={Search} link={"/search"}/>
      <NavTab label={'Cliques '} Icon={Users} link={"/cliques"}/>
      <NavTab label={'Notifications'} Icon={Bell} link={"/notifications"}/>
-     <NavTab label={'Messages'} Icon={MessageCircle} link={"/messages"}/>
     </ul>
    </div>
    <div className="absolute bottom-5 ">
