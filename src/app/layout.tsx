@@ -3,7 +3,10 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/Theme/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
+import Header from "@/components/Header/Header";
 import Sidebar from "@/components/Sidebar/Sidebar";
+import { cn } from "@/lib/utils";
+import BottomTab from "@/components/BottomTab/BottomTab";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,17 +32,30 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={cn(`${geistSans.variable} ${geistMono.variable} antialiased`,'')}
       >     <ThemeProvider
       attribute="class"
       defaultTheme="system"
       enableSystem
       disableTransitionOnChange
     >
-      <div className="flex ">
+      <main className="flex">
+        <div className="md:flex hidden lg:w-[220px] md:w-[60px] ">
         <Sidebar/>
-        {children}
         </div>
+       <div>
+        <div className="md:hidden h-[60px]">
+        <Header/>
+        </div>
+      
+{children}
+    
+      <div className="md:hidden flex w-full h-[60px]">
+      <BottomTab/>
+      </div>
+      </div>
+      </main>
+
         <Toaster/>
         </ThemeProvider>
       </body>
