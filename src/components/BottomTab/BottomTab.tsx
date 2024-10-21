@@ -28,7 +28,7 @@ interface NabTabInterface {
 
 const BottomTab = () => {
   return (
-    <div className='fixed bottom-0 left-0 w-full border-t-2 h-[60px] flex items-center px-2'>
+    <div className='fixed bottom-0 left-0 w-full z-50 border-t-2 h-[60px] bg-background flex items-center px-2'>
        
        <ul className="flex md:flex-col justify-between w-full">
      <NavTab Icon={Home} link={"/"}/>

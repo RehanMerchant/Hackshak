@@ -47,9 +47,11 @@ export default function RootLayout({
         <div className="md:hidden h-[60px]">
         <Header/>
         </div>
-      
+   
+
+ 
 {children}
-    
+
       <div className="md:hidden flex w-full h-[60px]">
       <BottomTab/>
       </div>
