@@ -1,8 +1,13 @@
+import { ModeToggle } from '@/components/Theme/ThemTooglerButton'
 import React from 'react'
 
 const ProfilePage = () => {
   return (
-    <div>ProfilePage</div>
+    <div>ProfilePage
+
+
+      <ModeToggle/>
+    </div>
   )
 }
 
