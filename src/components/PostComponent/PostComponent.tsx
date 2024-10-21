@@ -12,7 +12,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Flag, Star } from "lucide-react";
-import { FaRegCommentDots } from "react-icons/fa";
 import { BiLike } from "react-icons/bi";
 import { BiSolidLike } from "react-icons/bi";
 
@@ -26,12 +25,13 @@ interface PostInterface{
  title:String;
  desc:String;
  postimage:any;
+ likesno:String;
 
 }
 
 
 
-const PostComponent = ({name,date,Dp,title,desc,postimage}:PostInterface) => {
+const PostComponent = ({name,date,Dp,title,desc,postimage,likesno}:PostInterface) => {
   const [like,SetLike] = useState(false)
   return (
     <div className="w-full border-2 cursor-pointer rounded-md p-2">
@@ -80,8 +80,9 @@ const PostComponent = ({name,date,Dp,title,desc,postimage}:PostInterface) => {
   </p>
 </div>
 <div className="p-2 flex justify-between">
-  <div className="flex items-center gap-2 cursor-pointer md:text-base text-sm">
- <FaRegCommentDots/> Comments
+  <div className="flex gap-4 items-center  cursor-pointer md:text-base text-sm text-muted-foreground">
+<p>2.7K Views</p>
+<p>{likesno} Likes</p>
   </div>
 <div className="px-2 items-center">
 {
