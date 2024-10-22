@@ -3,7 +3,7 @@ import React from 'react'
 import { AiFillCode } from 'react-icons/ai'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Link from 'next/link'
-
+import { MdFileUpload } from "react-icons/md";
 
 const Header = () => {
   return (
@@ -14,13 +14,18 @@ const Header = () => {
           Hackshak
         </p>
         </div>
-        <Link href={'/profile'}>
+        <div className='flex items-center gap-4'>
+
+
+<MdFileUpload className='size-6'/>
+<Link href={'/profile'}>
    
-        <Avatar>
-  <AvatarImage src="https://github.com/shadcn.png" />
-  <AvatarFallback>CN</AvatarFallback>
+   <Avatar className='size-8'>
+<AvatarImage src="https://github.com/shadcn.png" />
+<AvatarFallback>CN</AvatarFallback>
 </Avatar>
 </Link>
+</div>
         </div>
    
   )
