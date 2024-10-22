@@ -4,7 +4,7 @@ import Post2 from "@/components/PostComponent/Post2.jpg";
 import Post3 from "@/components/PostComponent/Post3.png";
 export default function Home() {
   return (
-   <div className="lg:w-[calc(100vw-220px)]  md:w-[calc(100vw-60px)] w-screen h-72 flex flex-col items-center md:pt-10 px-4 pt-5 ">
+   <div className="lg:w-[calc(100vw-220px)]  md:w-[calc(100vw-60px)] w-screen  flex flex-col items-center md:pt-10 px-4 pt-5 ">
 <div className="md:w-[650px] w-full h-auto md:gap-y-14 gap-y-8 flex flex-col md:pb-10 pb-20">
 
 
