@@ -1,6 +1,6 @@
 "use client"
 import { cn } from "@/lib/utils";
-import { Bell,  Home, LucideIcon, Search, Upload } from "lucide-react";
+import {  Home, LucideIcon, Search } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
@@ -63,7 +63,6 @@ const Sidebar = () => {
 </Sheet>
 
 
-     <NavTab label={'Notifications'} Icon={Bell} link={"/notifications"}/>
     </ul>
     
    </div>
