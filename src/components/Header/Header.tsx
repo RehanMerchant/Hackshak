@@ -3,7 +3,15 @@ import React from 'react'
 import { AiFillCode } from 'react-icons/ai'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Link from 'next/link'
-import { MdFileUpload } from "react-icons/md";
+import { Search } from 'lucide-react'
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+import SearchComp from '../Search/Search'
 
 const Header = () => {
   return (
@@ -17,7 +25,19 @@ const Header = () => {
         <div className='flex items-center gap-4'>
 
 
-<MdFileUpload className='size-6'/>
+
+<Sheet>
+  <SheetTrigger><Search  className='size-5'/></SheetTrigger>
+  <SheetContent className='w-full md:hidden'>
+    <SheetHeader>
+      <SheetTitle>Search</SheetTitle>
+    </SheetHeader>
+    <SearchComp/>
+  </SheetContent>
+</Sheet>
+
+
+
 <Link href={'/profile'}>
    
    <Avatar className='size-8'>

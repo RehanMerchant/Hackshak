@@ -1,6 +1,6 @@
 "use client"
 import { cn } from "@/lib/utils";
-import { Bell, Home, LucideIcon, Search } from "lucide-react";
+import { Bell, Home, LucideIcon,} from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -32,7 +32,6 @@ const BottomTab = () => {
        
        <ul className="flex md:flex-col justify-between w-full">
      <NavTab Icon={Home} link={"/"}/>
-     <NavTab  Icon={Search} link={"/search"}/>
      <NavTab  Icon={Bell} link={"/notifications"}/>
     </ul>
         
