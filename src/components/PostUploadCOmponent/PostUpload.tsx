@@ -1,5 +1,7 @@
+"use client"
 import { Upload } from 'lucide-react'
-import React from 'react'
+import React, { useState } from 'react'
+
 import {
     Dialog,
     DialogContent,
@@ -10,7 +12,10 @@ import {
   } from "@/components/ui/dialog"
   import { IoImageOutline } from "react-icons/io5";
 import { Button } from '../ui/button';
+import TagInput from '../Tag/TagInput';
 const PostUpload = () => {
+
+
   return (
     <div className='w-full  px-2 py-4  rounded-md'>
 
@@ -31,14 +36,20 @@ const PostUpload = () => {
       <DialogTitle>Write Post</DialogTitle>
     </DialogHeader>
     <div className='py-2 flex flex-col gap-y-4'>
-        <input className='bg-secondary md:px-2 py-2 px-3 rounded-md outline-none' />
-<textarea className='w-full bg-secondary outline-none rounded-md h-44 md:p-2 p-4 resize-none '/>
+        <input placeholder='Your Title goes here...' className='bg-secondary md:px-2 py-2 px-3 rounded-md outline-none' />
+<textarea placeholder='Describe here..' className='w-full bg-secondary outline-none rounded-md h-44 md:p-2 p-4 resize-none '/>
+
+<TagInput/>
+
+
 <div className='flex items-center justify-between'>
-<div className='flex items-center gap-2 bg-secondary p-2 rounded-md md:text-base text-sm cursor-pointer'>
- <IoImageOutline className='size-6'/>
+<Button variant={"outline"}>
+<IoImageOutline className='size-6'/>
  <p>Add Image
     </p>
-</div>
+</Button>
+
+
 <Button variant={"secondary"}>
  <Upload/>   Post
 </Button>
