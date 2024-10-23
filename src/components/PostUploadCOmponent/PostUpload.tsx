@@ -17,7 +17,7 @@ const PostUpload = () => {
 
 
   return (
-    <div className='w-full  px-2 py-4  rounded-md'>
+    <div className='px-2 py-4 bg-background  rounded-md'>
 
 
 

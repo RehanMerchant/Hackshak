@@ -7,7 +7,7 @@ export default function Home() {
   return (
    <div className="lg:w-[calc(100vw-220px)]  md:w-[calc(100vw-60px)] w-screen  flex flex-col items-center md:pt-6 px-4 pt-2 ">
 
-<div className="md:w-[650px] w-full pb-4">
+<div className="md:w-[650px] w-full pb-3 md:pb-6">
 
 <PostUpload/>
 </div>
