@@ -3,6 +3,7 @@ import React from 'react'
 import { AiFillCode } from 'react-icons/ai'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Link from 'next/link'
+import { MdLogout } from "react-icons/md";
 import { Search } from 'lucide-react'
 import {
   Sheet,
@@ -12,7 +13,14 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import SearchComp from '../Search/Search'
-
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 const Header = () => {
   return (
     <div className='w-full h-[60px] z-50 border-b-2 justify-between bg-background flex md:hidden items-center fixed px-2'>
@@ -38,15 +46,31 @@ const Header = () => {
 
 
 
-<Link href={'/profile'}>
+
    
-   <Avatar className='size-8'>
+
+<DropdownMenu>
+  <DropdownMenuTrigger>
+
+  <Avatar className='size-8'>
 <AvatarImage src="https://github.com/shadcn.png" />
 <AvatarFallback>CN</AvatarFallback>
 </Avatar>
-</Link>
+
+  </DropdownMenuTrigger>
+  <DropdownMenuContent>
+    <DropdownMenuLabel>My Account</DropdownMenuLabel>
+    <DropdownMenuSeparator />
+    <Link href={"/profile"}> <DropdownMenuItem>Profile </DropdownMenuItem> </Link>
+    <DropdownMenuItem>Dashboard</DropdownMenuItem>
+    <DropdownMenuItem> <MdLogout /> Logout</DropdownMenuItem>
+  </DropdownMenuContent>
+</DropdownMenu>
+
 </div>
         </div>
+
+
    
   )
 }

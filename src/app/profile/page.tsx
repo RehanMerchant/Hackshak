@@ -21,6 +21,7 @@ import {
 } from "@/components/ui/dialog"
 import { ModeToggle } from "@/components/Theme/ThemTooglerButton";
 import { Moon, Sun } from "lucide-react"
+import { useState } from "react";
 
 
 
@@ -56,6 +57,10 @@ Javascript Complete Roadmap for Beginners.
 
 const ProfilePage = () => {
   const { setTheme } = useTheme()
+  const [value, Setvalue]= useState("Sk Rehan")
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    Setvalue(event.target.value);
+  };
   return (
     <div>
       <div className="md:p-10 p-5">
@@ -115,8 +120,9 @@ Auto
             </div>
             <div className="p-2 flex flex-col gap-y-2 md:text-base text-sm">
               <input
-                value={"Sk Rehan"}
-                className="px-2 py-1.5 w-[80%]  md:w-[300px] rounded-md outline-none"
+                value={value}
+                onChange={handleChange}
+                className="px-2 py-1.5 w-[80%]  md:w-[300px] bg-secondary rounded-md outline-none"
               />
               <input
                 disabled
