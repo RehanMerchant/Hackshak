@@ -62,7 +62,7 @@ const Header = () => {
     <DropdownMenuLabel>My Account</DropdownMenuLabel>
     <DropdownMenuSeparator />
     <Link href={"/profile"}> <DropdownMenuItem>Profile </DropdownMenuItem> </Link>
-    <DropdownMenuItem>Dashboard</DropdownMenuItem>
+    <Link href={"/dashboard"}> <DropdownMenuItem>Dashboard</DropdownMenuItem></Link>
     <DropdownMenuItem> <MdLogout /> Logout</DropdownMenuItem>
   </DropdownMenuContent>
 </DropdownMenu>

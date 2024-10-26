@@ -37,8 +37,8 @@ Sk Rehan
     <DropdownMenuLabel>My Account</DropdownMenuLabel>
     <DropdownMenuSeparator />
     <Link href={"/profile"}> <DropdownMenuItem>Profile </DropdownMenuItem> </Link>
-    <DropdownMenuItem>Dashboard</DropdownMenuItem>
-    <DropdownMenuItem> <MdLogout /> Logout</DropdownMenuItem>
+    <Link href={"/dashboard"}> <DropdownMenuItem>Dashboard</DropdownMenuItem></Link>
+    <DropdownMenuItem> <MdLogout />Logout</DropdownMenuItem>
   </DropdownMenuContent>
 </DropdownMenu>
 

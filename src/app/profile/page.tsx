@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { MdVerified } from "react-icons/md";
 import { MdSpaceDashboard } from "react-icons/md";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import Post from "@/components/PostComponent/Post1.png"
+
 import Image from "next/image";
 import { LuEye } from "react-icons/lu";
 import { BiLike } from "react-icons/bi";
@@ -14,15 +14,16 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { ModeToggle } from "@/components/Theme/ThemTooglerButton";
 import { Moon, Sun } from "lucide-react"
 import { useState } from "react";
-
+import Link from "next/link";
+import Post from '@/components/PostComponent/Post1.png'
+import Post2 from '@/components/PostComponent/Post2.jpg'
+import Post3 from '@/components/PostComponent/Post3.png'
 
 
 function ProfileViewPost(){
@@ -163,9 +164,9 @@ Save
 
       <p className="md:text-2xl text-xl">Content</p>
 
-    <Button  variant={"secondary"}>
+      <Link href={"/dashboard"}> <Button  variant={"secondary"}>
     <MdSpaceDashboard />  Dashboard
-    </Button>
+    </Button></Link>
 </div>
 <div className="pt-4 lg:w-[calc(100vw-320px)]  md:w-[calc(100vw-160px)] w-[calc(100vw-40px)]">
 

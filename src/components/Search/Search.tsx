@@ -47,7 +47,7 @@ const SearchComp = () => {
 <div className="pt-5 gap-y-1 flex flex-col">
 <SearchTab dp={"https://img.freepik.com/premium-photo/astronaut-alien-planet-hightech-astronaut-from-future_158863-9213.jpg"} name={"Sk Rehan"} email={"skmdrehan432@gmail.com"}/>
 
-<SearchTab dp={"https://media.istockphoto.com/id/1155858136/photo/pride-flag-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=LUoYt5TwVenlHOXsNgq1Y9o0AgHwcRkEHJUzpsE4DsI="} name={"Sugyansil Das"} email={"sygansil@gmail.com"}/>
+<SearchTab dp={"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Jim_Parsons_2016.jpg/640px-Jim_Parsons_2016.jpg"} name={"Jim Parson"} email={"jimparson@gmail.com"}/>
 
 
 
